@@ -1,0 +1,39 @@
+.service {
+    color: #ffffff;
+    padding: 20px 18px 10px;
+    height: 100%;
+    background: rgba(66, 70, 113, 0.5);
+    border-radius: 6px;
+    &.active-service {
+        background: rgba(26, 201, 255, 0.8);
+        transition: .5s;
+    }
+    p {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .service {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        p {
+            margin-top: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .service {
+        padding: 18px 12px 8px;
+        img {
+            width: 43px;
+            height: 43px;
+        }
+        p {
+            margin-top: 25px;
+        }
+    }
+}

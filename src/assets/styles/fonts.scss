@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "SourceSansProRegular";
+    src: local("SourceSansProRegular"),
+    url("../../fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansProSemiBold";
+    src: local("SourceSansProSemiBold"),
+    url("../../fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansProBold";
+    src: local("SourceSansProBold"),
+    url("../../fonts/SourceSansPro-Bold.ttf") format("truetype");
+}
+
+.font-face-regular {
+    font-family: "SourceSansProRegular";
+}
+
+.font-face-semi-bold {
+    font-family: "SourceSansProSemiBold";
+}
+
+.font-face-bold {
+    font-family: "SourceSansProBold";
+}

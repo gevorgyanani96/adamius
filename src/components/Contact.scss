@@ -1,0 +1,89 @@
+@import "../assets/styles/variables";
+
+.contact-container {
+  text-align: center;
+  padding: 100px 20px 86px;
+  background-color: $main-blue;
+  h1 {
+    margin-bottom: 10px;
+  }
+  > p {
+    display: none;
+  }
+  .contact-description {
+    margin-bottom: 82px;
+  }
+  .contacts {
+    .contacts-item {
+      color: #ffffff;
+      svg {
+        width: auto;
+        height: 40px;
+      }
+      p {
+        margin-top: 32px;;
+      }
+    }
+    .divider {
+      display: inline-block;
+      width: 1px;
+      height: 24px;
+      background-color: #ffffff;
+      margin: 0 61px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .contact-container {
+    .contact-description {
+      margin-bottom: 52px;
+    }
+    h2 {
+      display: block;
+    }
+    > p {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .contact-container {
+    padding-top: 40px;
+    padding-bottom: 54px;
+    .contact-description {
+      margin-bottom: 45px;
+    }
+    .contacts {
+      .contacts-item {
+        svg {
+          height: 34px;
+        }
+        p {
+          margin-top: 25px;;
+        }
+      }
+      .divider {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .contact-container {
+    padding-bottom: 64px;
+    .contact-description {
+      margin-bottom: 56px;
+    }
+    .contacts {
+      flex-direction: column;
+      .divider {
+        margin: 30px 0;
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

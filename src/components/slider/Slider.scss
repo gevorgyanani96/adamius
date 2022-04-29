@@ -1,0 +1,223 @@
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 752px;
+  box-sizing: border-box;
+  overflow: hidden;
+  .slide {
+    min-width: 100%;
+    height: 100%;
+    transition: .7s;
+    overflow: hidden;
+  }
+  .slider-content {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 188px;
+    height: calc(100% - 188px);
+    padding-bottom: 57px;
+    .header {
+      padding: 0 23%;
+      margin-bottom: 15px;
+      h1 {
+        margin-bottom: 30px;
+      }
+      h2 {
+        color: #ffffff;
+      }
+    }
+     .services-container {
+       display: flex;
+       align-self: stretch;
+       flex-wrap: wrap;
+       justify-content: center;
+       padding: 0 57.5px;
+       .service-item {
+         cursor: pointer;
+         width: 236px;
+         max-width: calc(20% - 29px);
+         min-height: 212px;
+         margin: 0 14.5px;
+       }
+     }
+  }
+  %btn-styles {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+    background: none;
+  }
+
+  #leftBtn {
+    left: 40px;
+    @extend %btn-styles;
+  }
+
+  #rightBtn {
+    right: 40px;
+    @extend %btn-styles;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .slider {
+    min-height: 680px;
+    .slider-content {
+      padding-bottom: 70px;
+      .header {
+        padding-left: 18%;
+        padding-right: 18%;
+        h1 {
+          margin-bottom: 10px;
+        }
+      }
+      .services-container {
+        padding-left: 27.5px;
+        padding-right: 27.5px;
+        .service-item {
+          cursor: pointer;
+          width: 215px;
+          max-width: calc(20% - 10px);
+          min-height: 192px;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+    }
+    #leftBtn {
+      left: 54px;
+    }
+    #rightBtn {
+      right: 54px;
+    }
+    #leftBtn, #rightBtn {
+      svg {
+        width: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .slider {
+    min-height: 540px;
+    height: 540px;
+    .slider-content {
+      top: 148px;
+      height: calc(100% - 148px);
+      padding-bottom: 32px;
+      .header {
+        padding-left: 13%;
+        padding-right: 13%;
+        h1 {
+          margin-bottom: 20px;
+        }
+      }
+      .services-container {
+        padding-left: 23px;
+        padding-right: 23px;
+        .service-item {
+          cursor: pointer;
+          width: 179px;
+          min-height: 176px;
+        }
+      }
+    }
+    #leftBtn {
+      left: 39px;
+    }
+    #rightBtn {
+      right: 39px;
+    }
+    #leftBtn, #rightBtn {
+      svg {
+        width: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    min-height: 652px;
+    height: 652px;
+    .slider-content {
+      top: 214px;
+      height: calc(100% - 214px);
+      justify-content: center;
+      .header {
+        margin-bottom: 34px;
+      }
+      .services-container {
+        .service-item {
+          display: none;
+          &.mobile-item {
+            display: block;
+            cursor: auto;
+            margin: 0;
+            width: 200px;
+            max-width: 100%;
+            min-height: 176px;
+          }
+        }
+      }
+    }
+    #leftBtn {
+      left: 34px;
+    }
+    #rightBtn {
+      right: 34px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .slider {
+    min-height: 652px;
+    height: 652px;
+    .slider-content {
+      justify-content: space-between;
+      .services-container {
+        .service-item {
+          &.mobile-item {
+            width: 180px;
+            min-height: 156px;
+          }
+        }
+      }
+    }
+    #leftBtn {
+      left: 20px;
+    }
+    #rightBtn {
+      right: 20px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .slider {
+    .slider-content {
+      top: 180px;
+      height: calc(100% - 180px);
+      .header {
+        margin-bottom: 12px;
+        h2 {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+    #leftBtn, #rightBtn {
+      svg {
+        width: 7px;
+      }
+    }
+  }
+}
